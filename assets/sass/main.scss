@@ -1,0 +1,61 @@
+//--google fonts--//
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+//--google fonts--//
+
+//--Abstracts--//
+//--Mixnis--//
+@import "_abstracts/_mixins";
+//--Variable--//
+@import "_abstracts/_variables";
+//--Abstracts--//
+
+//--Base--//
+@import "_base/_typography";
+//--Base--//
+
+//--Layout--//
+//--Header Css--//
+@import "_layout/_header";
+//--Banner Css--//
+@import "_layout/_banner";
+//--Section Css--//
+@import "_layout/_section";
+//--Animation Css--//
+@import "_layout/_animation";
+//--Blog Css--//
+@import "_layout/_blog";
+//--Darkmode Css--//
+@import "_layout/_darkmode";
+//--Footer Css--//
+@import "_layout/_footer";
+//--Layout--//
+
+//--Components--//
+//--Button--//
+@import "_components/_buttons";
+//--Components--//
+
+//--Base--//
+//--Responsive--//
+@import "_base/_responsive";
+//--Base--//
+
+
+//--All css Linked--//
+//--Swipper bundle Css--//
+@import "swiper-bundle.min.css";
+//--Bootstram icon Css--//
+@import "bootstrap-icons.min.css";
+//--Odometer Css--//
+@import "odometer.css";
+//--Animatte Css--//
+@import "animate.css";
+//--Magnific Popup Css--//
+@import "magnific-popup.css";
+//--Owl Carousel Css--//
+@import "owl.carousel.min.css";
+//--Owl Theme Css--//
+@import "owl.theme.default.css";
+//--Nice select Css--//
+@import "nice-select.css";
+//--All css Linked--//
