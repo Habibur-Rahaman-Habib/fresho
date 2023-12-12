@@ -1858,7 +1858,7 @@ p {
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-        display: inline-block;
+        display: block;
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase; }
         .header-wrapper .main-menu li a:hover {
@@ -2373,6 +2373,9 @@ p {
     .header__contactwrap {
       display: none !important; } }
 
+.sub-menu li:hover > a {
+  padding-left: 20px !important; }
+
 .sub__listm {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -2380,6 +2383,9 @@ p {
   .sub__listm li {
     border-bottom: none !important;
     padding-left: 15px; }
+
+.shoplist__custom li a {
+  padding-left: 25px !important; }
 
 .shoplist__custom li:hover .sub_mega {
   visibility: visible;

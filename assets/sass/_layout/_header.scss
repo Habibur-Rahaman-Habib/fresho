@@ -404,7 +404,7 @@
         font-weight: 600;
         font-size: 14px;
         transition: all 0.3s;
-        display: inline-block;
+        display: block;
         @include bodyfont;
         text-transform: uppercase;
         &:hover {
@@ -1007,6 +1007,13 @@
 //--Header two End--//
 
 //--Mega menu by DevHabib--//
+.sub-menu {
+  li:hover > {
+    a {
+      padding-left: 20px !important;
+    }
+  }
+}
 .sub__listm {
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -1015,9 +1022,19 @@
     padding-left: 15px;
   }
 }
-.shoplist__custom li:hover .sub_mega {
-  visibility: visible;
-  opacity: 1;
+
+.shoplist__custom {
+  li {
+    a {
+      padding-left: 25px !important;
+    }
+    &:hover {
+      .sub_mega {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 }
 .sub_mega {
   visibility: hidden;
