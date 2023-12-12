@@ -1,322 +1,315 @@
 //card none
-.bncard__one{
-    height: 560px;
-    overflow: hidden;
-    .content__one{
-        position: absolute;
-        bottom: 40px;
-        left: 40px;
+.bncard__one {
+  height: 560px;
+  overflow: hidden;
+  .content__one {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s;
+  }
+  .bag__shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+    transition: all 0.4s;
+  }
+  &:hover {
+    .bag__shape {
+      transform: rotate(185deg);
+      top: -20px;
+      left: -10px;
     }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all 0.4s;
-    }
-    .bag__shape{
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: rotate(180deg);
-        transition: all 0.4s;
-    }
-    &:hover{
-        .bag__shape{
-            transform: rotate(185deg);
-            top: -20px;
-            left: -10px;
-        }
-    }
+  }
 }
-.bncard__middle{
-    height: 560px;
-    .middle__title{
-        font-size: 60px;
-        @include headfont;
-        @include breakpoint(max-lg){
-            font-size: 48px;
-        }
-        @include breakpoint(max-xxs){
-            font-size: 38px;
-        }
+.bncard__middle {
+  height: 560px;
+  .middle__title {
+    font-size: 60px;
+    @include headfont;
+    @include breakpoint(max-lg) {
+      font-size: 48px;
     }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all 0.4s;
+    @include breakpoint(max-xxs) {
+      font-size: 38px;
     }
-    .bncard__middlecontent{
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        padding: 70px 24px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s;
+  }
+  .bncard__middlecontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 70px 24px;
+  }
+  &::before {
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
     }
-    &::before{
-        position: absolute;
-        inset: 0;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: rgb(11 11 11 / 16%);
-    }
-    &:hover{
-        img{
-            transform: scale(1.1);
-        }
-    }
+  }
 }
 //card none
 
 //bn card right
-.bn__organicwrap{
-    @include breakpoint(max-xl){
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        .mb-24{
-            margin-bottom: 0;
-        }
+.bn__organicwrap {
+  @include breakpoint(max-xl) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .mb-24 {
+      margin-bottom: 0;
     }
-    @include breakpoint(max-md){
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 24px;
-    }
+  }
+  @include breakpoint(max-md) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
 }
-.organic__bn1{
+.organic__bn1 {
+  width: 100%;
+  height: 268px;
+  overflow: hidden;
+  img {
     width: 100%;
-    height: 268px;
+    height: 100%;
     overflow: hidden;
-    img{
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  @include breakpoint(max-xl) {
+    height: 350px;
+  }
+  @include breakpoint(max-lg) {
+    height: 250px;
+  }
+  .content__three {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .content__two {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
     }
-    @include breakpoint(max-xl){
-        height: 350px;
-    }
-    @include breakpoint(max-lg){
-        height: 250px;
-    }
-    .content__three{
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .content__two{
-        position: absolute;
-        left: 40px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    &:hover{
-        img{
-            transform: scale(1.1);
-        }
-    }
+  }
 }
 //bn card right
 
 //banner two
-.banner__content__wrappertwo{
-    background: #050505;
-    margin: 50px 0 80px;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    .right__thumbs{
-        position: absolute;
-        right: 0;
-        bottom: 0;
+.banner__content__wrappertwo {
+  background: #050505;
+  margin: 50px 0 80px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  .right__thumbs {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    img {
+      height: 100%;
+      transition: all 0.4s;
+    }
+    @include breakpoint(max-xxxl) {
+      max-width: 700px;
+      max-height: 500px;
+      img {
+        width: 100%;
         height: 100%;
-        img{
-            height: 100%;
-            transition: all 0.4s;
-        }
-        @include breakpoint(max-xxxl){
-            max-width: 700px;
-            max-height: 500px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        @include breakpoint(max-xl){
-            max-width: 500px;
-            max-height: 400px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        @include breakpoint(max-lg){
-            max-width: 600px;
-            max-height: 400px;
-            margin-left: auto;
-            padding-left: 20px;
-            margin-bottom: -20px;
-            position: initial;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
+      }
     }
-    &:hover{
-        .right__thumbs{
-            img{
-                transform: translateY(10px);
-            }
-        }
+    @include breakpoint(max-xl) {
+      max-width: 500px;
+      max-height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
+    @include breakpoint(max-lg) {
+      max-width: 600px;
+      max-height: 400px;
+      margin-left: auto;
+      padding-left: 20px;
+      margin-bottom: -20px;
+      position: initial;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &:hover {
+    .right__thumbs {
+      img {
+        transform: translateY(10px);
+      }
+    }
+  }
 }
-.banner__twocontent{
-    padding: 90px 0 85px 150px;
-    position: relative;
-    z-index: 1;
-    .bntwo__title{
-        font-size: 65px;
-        line-height: 75px;
-        display: block;
-        @include headfont;
-        @include breakpoint(max-md){
-            font-size: 48px;
-            line-height: 60px;
-        }
-        @include breakpoint(max-xs){
-            font-size: 36px;
-            line-height: 46px;
-        }
+.banner__twocontent {
+  padding: 90px 0 85px 150px;
+  position: relative;
+  z-index: 1;
+  .bntwo__title {
+    font-size: 65px;
+    line-height: 75px;
+    display: block;
+    @include headfont;
+    @include breakpoint(max-md) {
+      font-size: 48px;
+      line-height: 60px;
     }
-    .cmn--btn{
-        padding: 16px 36px;
-        color: #000;
-        font-size: 16px;
-        text-transform: capitalize;
-        background: #FBC264;
-        border-radius: 2px;
-        span{
-            color: #000;
-        }
-        @include headfont;
+    @include breakpoint(max-xs) {
+      font-size: 36px;
+      line-height: 46px;
     }
-    @include breakpoint(max-xxxl){
-        padding: 90px 0 85px 80px;
+  }
+  .cmn--btn {
+    padding: 16px 36px;
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    background: #fbc264;
+    border-radius: 2px;
+    span {
+      color: #000;
     }
-    @include breakpoint(max-xl){
-        padding: 60px 0 65px 50px;
-    }
-    @include breakpoint(max-lg){
-        padding: 50px 0 55px 24px;
-    }
-    @include breakpoint(max-xs){
-        padding: 0px 0 45px 16px;
-    }
-    
+    @include headfont;
+  }
+  @include breakpoint(max-xxxl) {
+    padding: 90px 0 85px 80px;
+  }
+  @include breakpoint(max-xl) {
+    padding: 60px 0 65px 50px;
+  }
+  @include breakpoint(max-lg) {
+    padding: 50px 0 55px 24px;
+  }
+  @include breakpoint(max-xs) {
+    padding: 0px 0 45px 16px;
+  }
 }
-.bntwo__saleoff{
-    padding: 7px 10px 5px;
-    font-size: 14px;
-    font-weight: 500;
-    @include bodyfont;
-    color: var(--white);
-    background: #FF5B34;
-    border-radius: 3px;
-    text-transform: uppercase;
-    line-height: 20px;
-    display: inline-block;  
+.bntwo__saleoff {
+  padding: 7px 10px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  @include bodyfont;
+  color: var(--white);
+  background: #ff5b34;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 20px;
+  display: inline-block;
 }
 //banner two
 
 //breadcroumnd banner
-.breadcroumnd__banner{
-    background: var(--bg1);
-    padding: 30px 0;
+.breadcroumnd__banner {
+  background: var(--bg1);
+  padding: 30px 0;
 }
-.breadcroumnd__content{
-    li{
-        padding-left: 10px;
-        padding-right: 10px;
-        position: relative;
-        &:not(:first-child){
-           &::before{
-            position: absolute;
-            content: "";
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 1px;
-            height: 50%;
-            background: var(--base2);
-           }
-        }
-        a{
-            &:hover{
-                color: var(--base2);
-            }
-        }
+.breadcroumnd__content {
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    &:not(:first-child) {
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 50%;
+        background: var(--base2);
+      }
     }
+    a {
+      &:hover {
+        color: var(--base2);
+      }
+    }
+  }
 }
 //breadcroumnd banner
 
 //creation
-.creation__cate{
-    li{
-        gap: 20px;
-        &:not(:last-child){
-            margin-bottom: 50px;
-        }
-        @include breakpoint(max-md){
-            gap: 14px;
-            &:not(:last-child){
-                margin-bottom: 20px;
-            }
-        }
-    }
-}
-.creation__thumbs{
+.creation__cate {
+  li {
     gap: 20px;
-    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    @include breakpoint(max-md) {
+      gap: 14px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.creation__thumbs {
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  .thumb {
     width: 100%;
-    .thumb{
+    img {
+      border-radius: 3px;
+      width: 100%;
+    }
+  }
+  .creation__circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    top: 50%;
+    left: 50%;
+    background: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    @include breakpoint(max-lg) {
+      width: 100px;
+      height: 100px;
+      img {
         width: 100%;
-        img{
-            border-radius: 3px;
-            width: 100%;
-        }
+        height: 100%;
+      }
     }
-    .creation__circle{
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        top: 50%;
-        left: 50%;
-        background: var(--white);
-        border-radius: 50%;
-        padding: 10px;
-        transform: translate(-50%, -50%);
-       @include breakpoint(max-lg){
-        width: 100px;
-        height: 100px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-       }
-    }
+  }
 }
 //creation

@@ -1,51 +1,48 @@
-
-
-
 :root {
-    --body: #ffffff;
-    --white: #ffffff;
-    --headtop: #E4E1DD;
-    --base: #FBC264;
-    --base2: #13A662;
-    --base3: #FF5931;
-    --base4: #FFA818;
-    --base5: #FF6C49;
-    --bord: #DDDDDD;
-    --basebg: #15673B;
-    --title: #000;
-    --dtext1: #703C00;
-    --subtitle: #17171D;
-    --ratting: #FFBE57;
-    --pra: #525252;
-    --spa: #A5A5A5;
-    --faqbg: #F6F7F8;
-    --border: #E7E7E7;
-    --border2: #DDD;
-    --bg1: #F4F1ED;
-    --footertext: #C2DECF;
-    --lfooterbg: #fff;
+  --body: #ffffff;
+  --white: #ffffff;
+  --headtop: #e4e1dd;
+  --base: #fbc264;
+  --base2: #13a662;
+  --base3: #ff5931;
+  --base4: #ffa818;
+  --base5: #ff6c49;
+  --bord: #dddddd;
+  --basebg: #15673b;
+  --title: #000;
+  --dtext1: #703c00;
+  --subtitle: #17171d;
+  --ratting: #ffbe57;
+  --pra: #525252;
+  --spa: #a5a5a5;
+  --faqbg: #f6f7f8;
+  --border: #e7e7e7;
+  --border2: #ddd;
+  --bg1: #f4f1ed;
+  --footertext: #c2decf;
+  --lfooterbg: #fff;
 }
 
 .darkmode {
-    --body: #212020;
-    --white: #ffffff;
-    --headtop: #212020;
-    --base: #FBC264;
-    --base2: #13A662;
-    --base3: #FF5931;
-    --base4: #FFA818;
-    --base5: #FF6C49;
-    --basebg: rgb(44, 39, 39);
-    --title: #fff;
-    --dtext1: #703C00;
-    --subtitle: #17171D;
-    --ratting: #FFBE57;
-    --pra: #A5A5A5;
-    --faqbg: #17171D;
-    --spa: #A5A5A5;
-    --border: #efe8e852;
-    --border2: #DDD;
-    --bg1: #1b1a1a;
-    --footertext: #C2DECF;
-    --darkcmn: rgb(44, 39, 39);
+  --body: #212020;
+  --white: #ffffff;
+  --headtop: #212020;
+  --base: #fbc264;
+  --base2: #13a662;
+  --base3: #ff5931;
+  --base4: #ffa818;
+  --base5: #ff6c49;
+  --basebg: rgb(44, 39, 39);
+  --title: #fff;
+  --dtext1: #703c00;
+  --subtitle: #17171d;
+  --ratting: #ffbe57;
+  --pra: #a5a5a5;
+  --faqbg: #17171d;
+  --spa: #a5a5a5;
+  --border: #efe8e852;
+  --border2: #ddd;
+  --bg1: #1b1a1a;
+  --footertext: #c2decf;
+  --darkcmn: rgb(44, 39, 39);
 }

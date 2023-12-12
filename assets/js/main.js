@@ -6,61 +6,61 @@
 *Author URI: https://themeforest.net/user/sparkraxx/portfolio
 *Description: Fresho - Fresho is a special HTML template  designed for online groceries, organic bio products and grocery shopping and includes all the features for the quick shopping and checkout.
 
-    ==================================================
+		==================================================
 
-     01. Added Smooth Scroll 
-     -------------------------------------------------
-     02. Preloader
-     -------------------------------------------------
-     03. Scroll To Top With Progress
-     -------------------------------------------------
-     04. Nice Select
-     -------------------------------------------------
-     05. Custom Menu
-     -------------------------------------------------
-     06. Video Popup
-     -------------------------------------------------
-     07. Odemoter
-     -------------------------------------------------
-     08. Wow Animation
-     -------------------------------------------------
-     09. Swipper Slider
-     -------------------------------------------------
-     10. on resize effects
-     -------------------------------------------------
-     11. footer copyright year
-     -------------------------------------------------
-     12. odometer counter
-     -------------------------------------------------
-     13. video popup
-     -------------------------------------------------
-     14. Date Time End
-     -------------------------------------------------
-     15. Isotop Filter
-     -------------------------------------------------
-     16. Quantity Count
-     -------------------------------------------------
-     17. Profile Images Change
-     -------------------------------------------------
-     18. Custom Range Slider
-     -------------------------------------------------
-     19. Magnify Img Zoom
-     -------------------------------------------------
-     20. Product slider
-     -------------------------------------------------
-     21. Recently slider
-     -------------------------------------------------
-     22. Landed Slider
-     -------------------------------------------------
-     23. Customer Slider
-     -------------------------------------------------
-     24. Product Details Slider
-     -------------------------------------------------
-     25. Title Animation
-     -------------------------------------------------
-     26. Footer Styele Three
+		 01. Added Smooth Scroll 
+		 -------------------------------------------------
+		 02. Preloader
+		 -------------------------------------------------
+		 03. Scroll To Top With Progress
+		 -------------------------------------------------
+		 04. Nice Select
+		 -------------------------------------------------
+		 05. Custom Menu
+		 -------------------------------------------------
+		 06. Video Popup
+		 -------------------------------------------------
+		 07. Odemoter
+		 -------------------------------------------------
+		 08. Wow Animation
+		 -------------------------------------------------
+		 09. Swipper Slider
+		 -------------------------------------------------
+		 10. on resize effects
+		 -------------------------------------------------
+		 11. footer copyright year
+		 -------------------------------------------------
+		 12. odometer counter
+		 -------------------------------------------------
+		 13. video popup
+		 -------------------------------------------------
+		 14. Date Time End
+		 -------------------------------------------------
+		 15. Isotop Filter
+		 -------------------------------------------------
+		 16. Quantity Count
+		 -------------------------------------------------
+		 17. Profile Images Change
+		 -------------------------------------------------
+		 18. Custom Range Slider
+		 -------------------------------------------------
+		 19. Magnify Img Zoom
+		 -------------------------------------------------
+		 20. Product slider
+		 -------------------------------------------------
+		 21. Recently slider
+		 -------------------------------------------------
+		 22. Landed Slider
+		 -------------------------------------------------
+		 23. Customer Slider
+		 -------------------------------------------------
+		 24. Product Details Slider
+		 -------------------------------------------------
+		 25. Title Animation
+		 -------------------------------------------------
+		 26. Footer Styele Three
 
-    ==================================================
+		==================================================
 ============== */
 
 "user strict";
@@ -89,12 +89,15 @@ $(document).ready(function () {
 	$(".sbar, .sbar2").on("click", function (e) {
 		$(".cart__sidebar, .sbar").toggleClass("active");
 	});
+
 	// $(".shoplist__bar").on("click", function (e) {
 	// 	$(".shoplist__custom").toggleClass("active");
 	// });
+
 	$(".header-bar").on("click", function (e) {
 		$(".main-menu, .header-bar").toggleClass("active");
 	});
+
 	$(".main-menu li a").on("click", function (e) {
 		var element = $(this).parent("li");
 		if (element.hasClass("open")) {
@@ -125,8 +128,8 @@ $(document).ready(function () {
 	$('.video-btn').magnificPopup({
 		type: 'iframe',
 		callbacks: {
-			
-	  	}
+
+		}
 	});
 	//--Magnifiqpopup--
 
@@ -152,9 +155,9 @@ $(document).ready(function () {
 	var duration = 1000;
 	jQuery(window).on("scroll", function () {
 		if (jQuery(this).scrollTop() > offset) {
-		jQuery(".progress-wrap").addClass("active-progress");
+			jQuery(".progress-wrap").addClass("active-progress");
 		} else {
-		jQuery(".progress-wrap").removeClass("active-progress");
+			jQuery(".progress-wrap").removeClass("active-progress");
 		}
 	});
 	jQuery(".progress-wrap").on("click", function (event) {
@@ -185,43 +188,42 @@ $(document).ready(function () {
 	//--Wow Animation--//
 
 	//--Preloader--//
-	setTimeout(function(){
+	setTimeout(function () {
 		$('.preloader__wrap').fadeToggle();
 	}, 1000);
 	//--Preloader--//
 
 	//swipper slider//
-    var swiper = new Swiper(".product__featurewrapper", {
+	var swiper = new Swiper(".product__featurewrapper", {
 		loop: true,
-		autuplay: true,
-		speed: 600,
-		autoplayDisableOnInteraction: false,
+		slidesPerView: 5,
 		autoplay: {
+			enabled: true,
 			delay: 3000,
 		},
 		navigation: {
-		  nextEl: ".my-button-next",
-		  prevEl: ".my-button-prev",
+			nextEl: ".my-button-next",
+			prevEl: ".my-button-prev",
 		},
 		pagination: {
-		  el: ".swiper-pagination",
+			el: ".swiper-pagination",
 		},
 		breakpoints: {
 			1800: {
-			  slidesPerView: 5, 
-			  spaceBetween: 30
+				slidesPerView: 5,
+				spaceBetween: 30
 			},
 			1400: {
-			  slidesPerView: 4,
-			  spaceBetween: 20
+				slidesPerView: 4,
+				spaceBetween: 20
 			},
 			1050: {
-			  slidesPerView: 4,
-			  spaceBetween: 10
+				slidesPerView: 4,
+				spaceBetween: 10
 			},
 			991: {
-			  slidesPerView: 3,
-			  spaceBetween: 10
+				slidesPerView: 3,
+				spaceBetween: 10
 			},
 			500: {
 				slidesPerView: 2,
@@ -230,28 +232,28 @@ $(document).ready(function () {
 			0: {
 				slidesPerView: 1,
 				spaceBetween: 5
-			  }
-		  }
+			}
+		}
 	});
 
 	var swiper = new Swiper(".recently__slidered", {
 		loop: true,
 		breakpoints: {
 			1800: {
-			  slidesPerView: 4, 
-			  spaceBetween: 30
+				slidesPerView: 4,
+				spaceBetween: 30
 			},
 			1400: {
-			  slidesPerView: 4,
-			  spaceBetween: 20
+				slidesPerView: 4,
+				spaceBetween: 20
 			},
 			1050: {
-			  slidesPerView: 3,
-			  spaceBetween: 10
+				slidesPerView: 3,
+				spaceBetween: 10
 			},
 			991: {
-			  slidesPerView: 3,
-			  spaceBetween: 10
+				slidesPerView: 3,
+				spaceBetween: 10
 			},
 			500: {
 				slidesPerView: 2,
@@ -260,31 +262,31 @@ $(document).ready(function () {
 			0: {
 				slidesPerView: 1,
 				spaceBetween: 5
-			  }
-		  }
+			}
+		}
 	});
 
 	var swiper = new Swiper(".landed__clinet", {
 		loop: true,
 		pagination: {
-		  el: ".swiper-pagination",
+			el: ".swiper-pagination",
 		},
 		breakpoints: {
 			1800: {
-			  slidesPerView: 1, 
-			  spaceBetween: 10
+				slidesPerView: 1,
+				spaceBetween: 10
 			},
 			1400: {
-			  slidesPerView: 1,
-			  spaceBetween: 10
+				slidesPerView: 1,
+				spaceBetween: 10
 			},
 			1050: {
-			  slidesPerView: 1,
-			  spaceBetween: 10
+				slidesPerView: 1,
+				spaceBetween: 10
 			},
 			991: {
-			  slidesPerView: 1,
-			  spaceBetween: 10
+				slidesPerView: 1,
+				spaceBetween: 10
 			},
 			500: {
 				slidesPerView: 1,
@@ -293,8 +295,8 @@ $(document).ready(function () {
 			0: {
 				slidesPerView: 1,
 				spaceBetween: 5
-			  }
-		  }
+			}
+		}
 	});
 
 	var swiper = new Swiper(".customer__slidwrapper", {
@@ -307,20 +309,20 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			1800: {
-			  slidesPerView: 3, 
-			  spaceBetween: 30
+				slidesPerView: 3,
+				spaceBetween: 30
 			},
 			1400: {
-			  slidesPerView: 3,
-			  spaceBetween: 30
+				slidesPerView: 3,
+				spaceBetween: 30
 			},
 			1050: {
-			  slidesPerView: 3,
-			  spaceBetween: 20
+				slidesPerView: 3,
+				spaceBetween: 20
 			},
 			991: {
-			  slidesPerView: 3,
-			  spaceBetween: 10
+				slidesPerView: 3,
+				spaceBetween: 10
 			},
 			500: {
 				slidesPerView: 2,
@@ -329,9 +331,10 @@ $(document).ready(function () {
 			0: {
 				slidesPerView: 1,
 				spaceBetween: 5
-			  }
-		  }
+			}
+		}
 	});
+
 	//product slider
 	var swiper = new Swiper(".mySwiper", {
 		loop: true,
@@ -339,39 +342,40 @@ $(document).ready(function () {
 		slidesPerView: 4,
 		freeMode: true,
 		watchSlidesProgress: true,
-	  });
-	  var swiper2 = new Swiper(".mySwiper2", {
+	});
+
+	var swiper = new Swiper(".mySwiper2", {
 		loop: true,
 		spaceBetween: 10,
 		navigation: {
-		  nextEl: ".swiper-button-next",
-		  prevEl: ".swiper-button-prev",
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
 		thumbs: {
-		  swiper: swiper,
+			swiper: swiper,
 		},
-	  });
+	});
 	//product slider
-	  
+
 });
-	
+
 //Date time Set//
 
 function timingCalc(endtime) {
 	"use strict";
 
 	var timeTotal = Date.parse(endtime) - Date.now(),
-	timeSeconds = Math.floor((timeTotal / 1000) % 60),
-	timeMinutes = Math.floor((timeTotal / 1000 / 60) % 60),
-	timeHours = Math.floor((timeTotal / (1000 * 60 * 60)) % 24),
-	timeDays = Math.floor(timeTotal / (1000 * 60 * 60 * 24));
-		return {
+		timeSeconds = Math.floor((timeTotal / 1000) % 60),
+		timeMinutes = Math.floor((timeTotal / 1000 / 60) % 60),
+		timeHours = Math.floor((timeTotal / (1000 * 60 * 60)) % 24),
+		timeDays = Math.floor(timeTotal / (1000 * 60 * 60 * 24));
+	return {
 		total: timeTotal,
 		seconds: timeSeconds,
 		minutes: timeMinutes,
 		hours: timeHours,
 		days: timeDays
-		};
+	};
 }
 
 function animateCounter(selector, targetValue) {
@@ -379,31 +383,31 @@ function animateCounter(selector, targetValue) {
 	var currentValue = parseInt($element.text(), 10);
 
 	if (currentValue === targetValue) {
-	return;
+		return;
 	}
 
 	$element.addClass("counter-animate");
 	$element.text(targetValue);
 
 	setTimeout(function () {
-	$element.addClass("show");
+		$element.addClass("show");
 	}, 10);
 
 	setTimeout(function () {
-	$element.removeClass("counter-animate show");
+		$element.removeClass("counter-animate show");
 	}, 500);
 }
 
 function startCalc(endtime) {
-		var timeTotal = timingCalc(endtime);
-		animateCounter(".days", timeTotal.days);
-		animateCounter(".hours", timeTotal.hours);
-		animateCounter(".minutes", timeTotal.minutes);
-		animateCounter(".seconds", timeTotal.seconds);
-	
-		if (timeTotal.total <= 0) {
+	var timeTotal = timingCalc(endtime);
+	animateCounter(".days", timeTotal.days);
+	animateCounter(".hours", timeTotal.hours);
+	animateCounter(".minutes", timeTotal.minutes);
+	animateCounter(".seconds", timeTotal.seconds);
+
+	if (timeTotal.total <= 0) {
 		clearInterval(timingNow);
-		}
+	}
 }
 var DeadLine = new Date(Date.parse("25 Dec 2023 00:00:00 GMT"));
 setInterval(function () {
@@ -416,109 +420,109 @@ var $grid = $('.grid').isotope({
 	itemSelector: '.color-shape'
 });
 var filters = {};
-$('.filters').on( 'click', '.button', function( event ) {
-	var $button = $( event.currentTarget );
+$('.filters').on('click', '.button', function (event) {
+	var $button = $(event.currentTarget);
 	// get group key
 	var $buttonGroup = $button.parents('.button-group');
 	var filterGroup = $buttonGroup.attr('data-filter-group');
 	// set filter for group
-	filters[ filterGroup ] = $button.attr('data-filter');
+	filters[filterGroup] = $button.attr('data-filter');
 	// combine filters
-	var filterValue = concatValues( filters );
+	var filterValue = concatValues(filters);
 	// set filter for Isotope
 	$grid.isotope({ filter: filterValue });
 });
-$('.button-group').each( function( i, buttonGroup ) {
-	var $buttonGroup = $( buttonGroup );
-	$buttonGroup.on( 'click', 'button', function( event ) {
-	$buttonGroup.find('.is-checked').removeClass('is-checked');
-	var $button = $( event.currentTarget );
-	$button.addClass('is-checked');
+$('.button-group').each(function (i, buttonGroup) {
+	var $buttonGroup = $(buttonGroup);
+	$buttonGroup.on('click', 'button', function (event) {
+		$buttonGroup.find('.is-checked').removeClass('is-checked');
+		var $button = $(event.currentTarget);
+		$button.addClass('is-checked');
 	});
 });
-function concatValues( obj ) {
+function concatValues(obj) {
 	var value = '';
-	for ( var prop in obj ) {
-	value += obj[ prop ];
+	for (var prop in obj) {
+		value += obj[prop];
 	}
 	return value;
 }
 // Isotop Filte//
 
 //quantity
-	var input = document.querySelector('#qty');
-	var btnminus = document.querySelector('.qtyminus');
-	var btnplus = document.querySelector('.qtyplus');
-	if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
-		
-		var min = Number(input.getAttribute('min'));
-		var max = Number(input.getAttribute('max'));
-		var step = Number(input.getAttribute('step'));
+var input = document.querySelector('#qty');
+var btnminus = document.querySelector('.qtyminus');
+var btnplus = document.querySelector('.qtyplus');
+if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
 
-		function qtyminus(e) {
-			var current = Number(input.value);
-			var newval = (current - step);
-			if(newval < min) {
-				newval = min;
-			} else if(newval > max) {
-				newval = max;
-			} 
-			input.value = Number(newval);
-			e.preventDefault();
-		}
+	var min = Number(input.getAttribute('min'));
+	var max = Number(input.getAttribute('max'));
+	var step = Number(input.getAttribute('step'));
 
-		function qtyplus(e) {
-			var current = Number(input.value);
-			var newval = (current + step);
-			if(newval > max) newval = max;
-			input.value = Number(newval);
-			e.preventDefault();
+	function qtyminus(e) {
+		var current = Number(input.value);
+		var newval = (current - step);
+		if (newval < min) {
+			newval = min;
+		} else if (newval > max) {
+			newval = max;
 		}
-			
-		btnminus.addEventListener('click', qtyminus);
-		btnplus.addEventListener('click', qtyplus);
-	
-	} 
+		input.value = Number(newval);
+		e.preventDefault();
+	}
+
+	function qtyplus(e) {
+		var current = Number(input.value);
+		var newval = (current + step);
+		if (newval > max) newval = max;
+		input.value = Number(newval);
+		e.preventDefault();
+	}
+
+	btnminus.addEventListener('click', qtyminus);
+	btnplus.addEventListener('click', qtyplus);
+
+}
 //quantity
 
 //profile image change
 function readURL(input) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
-		reader.onload = function(e) {
-			$('#imagePreview').css('background-image', 'url('+e.target.result +')');
+		reader.onload = function (e) {
+			$('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
 			$('#imagePreview').hide();
 			$('#imagePreview').fadeIn(650);
 		}
 		reader.readAsDataURL(input.files[0]);
 	}
 }
-$("#imageUpload").change(function() {
+$("#imageUpload").change(function () {
 	readURL(this);
 });
 //profile image change
 
 //range slider
-function getVals(){
+function getVals() {
 	let parent = this.parentNode;
 	let slides = parent.getElementsByTagName("input");
-		let slide1 = parseFloat( slides[0].value );
-		let slide2 = parseFloat( slides[1].value );
-	if( slide1 > slide2 ){ let tmp = slide2; slide2 = slide1; slide1 = tmp; }
-	
+	let slide1 = parseFloat(slides[0].value);
+	let slide2 = parseFloat(slides[1].value);
+	if (slide1 > slide2) { let tmp = slide2; slide2 = slide1; slide1 = tmp; }
+
 	let displayElement = parent.getElementsByClassName("rangeValues")[0];
-		displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
+	displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
 }
-	
-window.onload = function(){
-let sliderSections = document.getElementsByClassName("range-slider");
-	for( let x = 0; x < sliderSections.length; x++ ){
+
+window.onload = function () {
+	let sliderSections = document.getElementsByClassName("range-slider");
+	for (let x = 0; x < sliderSections.length; x++) {
 		let sliders = sliderSections[x].getElementsByTagName("input");
-		for( let y = 0; y < sliders.length; y++ ){
-		if( sliders[y].type ==="range" ){
-			sliders[y].oninput = getVals;
-			sliders[y].oninput();
-		}
+		for (let y = 0; y < sliders.length; y++) {
+			if (sliders[y].type === "range") {
+				sliders[y].oninput = getVals;
+				sliders[y].oninput();
+			}
 		}
 	}
 }
@@ -551,7 +555,7 @@ progressBar: () => {
 		var value = e.getAttribute('data-value') / 100;
 		new Waypoint({
 			element: e,
-			handler: function() {
+			handler: function () {
 				line.animate(value);
 			},
 			offset: 'bottom-in-view',
@@ -570,7 +574,7 @@ progressBar: () => {
 		var value = e.getAttribute('data-value') / 100;
 		new Waypoint({
 			element: e,
-			handler: function() {
+			handler: function () {
 				circle.animate(value);
 			},
 			offset: 'bottom-in-view',
@@ -585,38 +589,38 @@ let priceGap = 1000;
 
 priceInput.forEach((input) => {
 	input.addEventListener("input", (e) => {
-	let minPrice = parseInt(priceInput[0].value),
-		maxPrice = parseInt(priceInput[1].value);
+		let minPrice = parseInt(priceInput[0].value),
+			maxPrice = parseInt(priceInput[1].value);
 
-	if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-		if (e.target.className === "input-min") {
-		rangeInput[0].value = minPrice;
-		range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-		} else {
-		rangeInput[1].value = maxPrice;
-		range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+		if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+			if (e.target.className === "input-min") {
+				rangeInput[0].value = minPrice;
+				range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+			} else {
+				rangeInput[1].value = maxPrice;
+				range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+			}
 		}
-	}
 	});
 });
 
 rangeInput.forEach((input) => {
 	input.addEventListener("input", (e) => {
-	let minVal = parseInt(rangeInput[0].value),
-		maxVal = parseInt(rangeInput[1].value);
+		let minVal = parseInt(rangeInput[0].value),
+			maxVal = parseInt(rangeInput[1].value);
 
-	if (maxVal - minVal < priceGap) {
-		if (e.target.className === "range-min") {
-		rangeInput[0].value = maxVal - priceGap;
+		if (maxVal - minVal < priceGap) {
+			if (e.target.className === "range-min") {
+				rangeInput[0].value = maxVal - priceGap;
+			} else {
+				rangeInput[1].value = minVal + priceGap;
+			}
 		} else {
-		rangeInput[1].value = minVal + priceGap;
+			priceInput[0].value = minVal;
+			priceInput[1].value = maxVal;
+			range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+			range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
 		}
-	} else {
-		priceInput[0].value = minVal;
-		priceInput[1].value = maxVal;
-		range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-		range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-	}
 	});
 
 
@@ -624,6 +628,6 @@ rangeInput.forEach((input) => {
 
 });
 //range slider 
-  
-		 
+
+
 

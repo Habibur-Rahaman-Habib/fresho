@@ -1,343 +1,343 @@
 //footer
-.footer__section{
-    background: url(../../assets/img/footer/footerbg1.jpg) no-repeat center center;
-    background-size: cover;
+.footer__section {
+  background: url(../../assets/img/footer/footerbg1.jpg) no-repeat center center;
+  background-size: cover;
 }
-.footerone__bg{
-    position: relative;
-    background: #00612D !important;
+.footerone__bg {
+  position: relative;
+  background: #00612d !important;
 }
-.footer__sectiontwo{
-    .help__support{
-        li{
-            a{
-                &:hover{
-                    color: var(--base2);
-                }
-            }
+.footer__sectiontwo {
+  .help__support {
+    li {
+      a {
+        &:hover {
+          color: var(--base2);
         }
+      }
     }
+  }
 }
 //download app
-.download__apps{
-    max-width: 650px;
-    text-align: center;
-    margin: 0 auto;
-    .down__app{
-        position: relative;
-        justify-content: center;
-        gap: 10px;
-        z-index: 9;
-        a{
-            img{
-                border-radius: 3px;
-            }
-        }
-        @include breakpoint(max-sm){
-            max-width: 266px;
-            img{
-                width: 100%;
-            }
-            margin: 0 auto;
-        }
+.download__apps {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  .down__app {
+    position: relative;
+    justify-content: center;
+    gap: 10px;
+    z-index: 9;
+    a {
+      img {
+        border-radius: 3px;
+      }
     }
-    h3{
-        @include breakpoint(max-xs){
-            font-size: 20px;
-            line-height: 1.5;
-        }
+    @include breakpoint(max-sm) {
+      max-width: 266px;
+      img {
+        width: 100%;
+      }
+      margin: 0 auto;
     }
+  }
+  h3 {
+    @include breakpoint(max-xs) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
 }
 //download app
 
-.footer__top{
-    position: relative;
-    z-index: 1;
-    border-top: 1px solid #21794A;
+.footer__top {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #21794a;
 }
 //footer top
-.quick__link{
-    li{
-        &:not(:last-child){
-            margin-bottom: 12px;
-        }
-        a{
-            &:hover{
-                color: var(--base);
-                border-left: 1px solid var(--base);
-            }
-        }
+.quick__link {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
     }
+    a {
+      &:hover {
+        color: var(--base);
+        border-left: 1px solid var(--base);
+      }
+    }
+  }
 }
-.footer__contact{
-    li{
-        &:not(:last-child){
-            margin-bottom: 16px;
-        }
-        a{
-            span{
-                width: calc(100% - 55px);
-                display: block;
-            }
-            &:hover{
-                color: var(--hover);
-            }
-        }
+.footer__contact {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 16px;
     }
+    a {
+      span {
+        width: calc(100% - 55px);
+        display: block;
+      }
+      &:hover {
+        color: var(--hover);
+      }
+    }
+  }
 }
-.footer__item{
-    .footer__logo{
-        @include breakpoint(max-xxl){
-            max-width: 200px;
-            img{
-                width: 100%;
-            }
-        }
-        @include breakpoint(max-lg){
-            max-width: 140px;
-            img{
-                width: 100%;
-            }
-        }
+.footer__item {
+  .footer__logo {
+    @include breakpoint(max-xxl) {
+      max-width: 200px;
+      img {
+        width: 100%;
+      }
     }
-    .cef__pra{
-        @include breakpoint(max-lg){
-            font-size: 16px;
-        }
+    @include breakpoint(max-lg) {
+      max-width: 140px;
+      img {
+        width: 100%;
+      }
     }
-    .formbox{
-        justify-content: space-between;
+  }
+  .cef__pra {
+    @include breakpoint(max-lg) {
+      font-size: 16px;
+    }
+  }
+  .formbox {
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 8px;
+    background: #fff;
+    input {
+      outline: none;
+      height: 44px;
+      width: 100%;
+      border-radius: 3px;
+      border: unset;
+      background: transparent;
+      padding-left: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #888;
+    }
+    ::placeholder {
+      color: var(--tableborder);
+    }
+    .ricon {
+      background: none;
+      outline: none;
+      border: unset;
+      padding-right: 6px;
+      i {
+        font-size: 26px;
+        color: var(--base5);
+      }
+    }
+    @include breakpoint(max-xl) {
+      padding: 4px;
+      .cmn--btn {
+        padding: 10px 25px;
+      }
+      input {
+        height: initial;
+        padding: 6px 15px 10px;
+      }
+    }
+  }
+  .social {
+    li {
+      a {
+        background: #128849;
         border-radius: 3px;
-        padding: 8px;
-        background: #fff;
-        input{
-            outline: none;
-            height: 44px;
-            width: 100%;
-            border-radius: 3px;
-            border: unset;
-            background: transparent;
-            padding-left: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            color: #888;
+        border: unset;
+        &:hover {
+          background: var(--base5);
         }
-        ::placeholder{
-            color: var(--tableborder);
-        }
-        .ricon{
-            background: none;
-            outline: none;
-            border: unset;
-            padding-right: 6px;
-            i{
-                font-size: 26px;
-                color: var(--base5);
-            }
-        }
-        @include breakpoint(max-xl){
-            padding: 4px;
-            .cmn--btn{
-                padding: 10px 25px;
-            }
-            input{
-                height: initial;
-                padding: 6px 15px 10px;
-            }
-        }
+      }
     }
-    .social{
-        li{
-            a{
-                background: #128849;
-                border-radius: 3px;
-                border: unset;
-                &:hover{
-                    background: var(--base5);
-                }
-            }
-        }
+  }
+  .subscribe {
+    padding: 20px 44px;
+    span {
+      color: #000;
     }
-    .subscribe{
-        padding: 20px 44px;
-        span{
-            color: #000;
-        }
-    }
+  }
 }
-.first__fitem{
-    max-width: 266px;
+.first__fitem {
+  max-width: 266px;
 }
 //footer bottom
-.footer__bottomtwo{
-    border-top: 1px solid var(--border2) !important;
+.footer__bottomtwo {
+  border-top: 1px solid var(--border2) !important;
 }
-.footer__bottom{
-    justify-content: space-between;
-    padding: 32px 0;
-    border-top: 1px solid #21794A;
+.footer__bottom {
+  justify-content: space-between;
+  padding: 32px 0;
+  border-top: 1px solid #21794a;
+  position: relative;
+  z-index: 1;
+  p {
+    text-align: center;
+  }
+  @include breakpoint(max-xl) {
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    gap: 10px 0;
+    p {
+      width: 100%;
+    }
+    .online__card {
+      width: 100%;
+      justify-content: center;
+      padding: 5px 0 2px;
+    }
+  }
+  @include breakpoint(max-xs) {
+    .online__card {
+      max-width: 250px;
+      li {
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xxsmall) {
+    padding: 25px 0;
+  }
+}
+.help__support {
+  gap: 18px;
+  li {
     position: relative;
-    z-index: 1;
-    p{
-        text-align: center;
+    &:not(:last-child) {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        right: -10px;
+        top: 4px;
+        height: 80%;
+        background: #c2decf;
+      }
     }
-    @include breakpoint(max-xl){
-        flex-wrap: wrap;
-        display: grid;
-        justify-content: center;
-        gap: 10px 0;
-        p{
-            width: 100%;
-        }
-        .online__card{
-            width: 100%;
-            justify-content: center;
-            padding: 5px 0 2px;
-        }
-    }
-    @include breakpoint(max-xs){
-        .online__card{
-            max-width: 250px;
-            li{
-                a{
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-    @include breakpoint(max-xxsmall){
-        padding: 25px 0;
-    }
+  }
+  @include breakpoint(max-xxsmall) {
+    flex-wrap: wrap;
+    gap: 2px 20px;
+    justify-content: center;
+  }
 }
-.help__support{
-    gap: 18px;
-    li{
-        position: relative;
-        &:not(:last-child){
-           &::before{
-            position: absolute;
-            content: "";
-            width: 1px;
-            right: -10px;
-            top: 4px;
-            height: 80%;
-            background: #C2DECF;
-           }
-        }
+.online__card {
+  gap: 10px;
+  li {
+    a {
+      img {
+        border-radius: 3px;
+      }
     }
-    @include breakpoint(max-xxsmall){
-        flex-wrap: wrap;
-        gap: 2px 20px;
-        justify-content: center;
-    }
+  }
 }
-.online__card{
-    gap: 10px;
-    li{
-        a{
-            img{
-                border-radius: 3px;
-            }
-        }
-    }
-}
-.footer__shape{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.footer__shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 //footer
 
 //subcribtion section
-.cmn__form{
-    justify-content: space-between;
-    background: var(--white);
-    border-radius: 100px;
-    padding: 12px 12px;
-    input{
-        width: 100%;
-        background: transparent;
-        outline: none;
-        border: unset;
-        color: var(--pragraph2);
-        font-size: 16px;
-        font-weight: 400;
-        padding-left: 12px;
-        
-        @include breakpoint(max-sm){
-            padding-left: 8px;
-            font-size: 12px;
-        }
+.cmn__form {
+  justify-content: space-between;
+  background: var(--white);
+  border-radius: 100px;
+  padding: 12px 12px;
+  input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: var(--pragraph2);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 12px;
+
+    @include breakpoint(max-sm) {
+      padding-left: 8px;
+      font-size: 12px;
     }
-    .cmn--btn{
-        padding: 0;
-        width: 180px;
-        padding: 5px 5px 8px;
-        height: 45px;
-        border: unset;
-        @include breakpoint(max-sm){
-            font-size: 14px;
-        }
+  }
+  .cmn--btn {
+    padding: 0;
+    width: 180px;
+    padding: 5px 5px 8px;
+    height: 45px;
+    border: unset;
+    @include breakpoint(max-sm) {
+      font-size: 14px;
     }
+  }
 }
 //subcribtion two section
 
 //footer two section
-.footer__section{
-    background: var(--lfooterbg);
+.footer__section {
+  background: var(--lfooterbg);
 }
-.socialtwo{
-    li{
-        a{
-            background: #F4F1ED !important;
-            i{
-                color: var(--pra);
-            }
-            &:hover{
-                background: #FF6C49 !important;
-                i{
-                    color: #fff !important;
-                }
-            }
+.socialtwo {
+  li {
+    a {
+      background: #f4f1ed !important;
+      i {
+        color: var(--pra);
+      }
+      &:hover {
+        background: #ff6c49 !important;
+        i {
+          color: #fff !important;
         }
+      }
     }
+  }
 }
-.instagram__box{
-    gap: 10px;
-    .instagram__item{
-        position: relative;
-        transition: all 0.4s;
-        border-radius: 3px;
-        img{
-            border-radius: 3px;
-        }
-        .icons{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 3px;
-            transition: all 0.4s;
-            i{
-                color: #fff;
-                font-size: 20px;
-                opacity: 0;
-            }
-        }
-        &:hover{
-           .icons{
-                background: rgb(86 80 56 / 72%);
-                i{
-                    opacity: 1;
-                }
-           } 
-        }
+.instagram__box {
+  gap: 10px;
+  .instagram__item {
+    position: relative;
+    transition: all 0.4s;
+    border-radius: 3px;
+    img {
+      border-radius: 3px;
     }
+    .icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      transition: all 0.4s;
+      i {
+        color: #fff;
+        font-size: 20px;
+        opacity: 0;
+      }
+    }
+    &:hover {
+      .icons {
+        background: rgba(86, 80, 56, 72%);
+        i {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 //footer two section

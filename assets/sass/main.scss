@@ -1,45 +1,44 @@
 //--google fonts--//
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 //--google fonts--//
 
 //--Abstracts--//
 //--Mixnis--//
-@import "_abstracts/_mixins";
+@import "_abstracts/mixins";
 //--Variable--//
-@import "_abstracts/_variables";
+@import "_abstracts/variables";
 //--Abstracts--//
 
 //--Base--//
-@import "_base/_typography";
+@import "_base/typography";
 //--Base--//
 
 //--Layout--//
 //--Header Css--//
-@import "_layout/_header";
+@import "_layout/header";
 //--Banner Css--//
-@import "_layout/_banner";
+@import "_layout/banner";
 //--Section Css--//
-@import "_layout/_section";
+@import "_layout/section";
 //--Animation Css--//
-@import "_layout/_animation";
+@import "_layout/animation";
 //--Blog Css--//
-@import "_layout/_blog";
+@import "_layout/blog";
 //--Darkmode Css--//
-@import "_layout/_darkmode";
+@import "_layout/darkmode";
 //--Footer Css--//
-@import "_layout/_footer";
+@import "_layout/footer";
 //--Layout--//
 
 //--Components--//
 //--Button--//
-@import "_components/_buttons";
+@import "_components/buttons";
 //--Components--//
 
 //--Base--//
 //--Responsive--//
-@import "_base/_responsive";
+@import "_base/responsive";
 //--Base--//
-
 
 //--All css Linked--//
 //--Swipper bundle Css--//
