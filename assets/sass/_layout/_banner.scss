@@ -6,6 +6,17 @@
     position: absolute;
     bottom: 40px;
     left: 40px;
+    .default-btn {
+      background-color: var(--base2);
+      color: var(--white);
+      border-radius: 25px;
+      span {
+        background-color: var(--white);
+      }
+      &:hover {
+        color: var(--title) !important;
+      }
+    }
   }
   img {
     width: 100%;
@@ -56,6 +67,11 @@
     width: 100%;
     text-align: center;
     padding: 70px 24px;
+    .boxex {
+      .default-btn {
+        border-radius: 25px;
+      }
+    }
   }
   &::before {
   }
@@ -105,6 +121,9 @@
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    .default-btn {
+      border-radius: 25px;
+    }
   }
   .content__two {
     position: absolute;

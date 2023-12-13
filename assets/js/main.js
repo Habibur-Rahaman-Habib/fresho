@@ -183,6 +183,24 @@ $(document).ready(function () {
 	});
 	//--Odometer--//
 
+	// Button Hover JS
+	$(function () {
+		$('.default-btn')
+			.on('mouseenter', function (e) {
+				var parentOffset = $(this).offset(),
+					relX = e.pageX - parentOffset.left,
+					relY = e.pageY - parentOffset.top;
+				$(this).find('span').css({ top: relY, left: relX })
+			})
+			.on('mouseout', function (e) {
+				var parentOffset = $(this).offset(),
+					relX = e.pageX - parentOffset.left,
+					relY = e.pageY - parentOffset.top;
+				$(this).find('span').css({ top: relY, left: relX })
+			});
+	});
+
+
 	//--Wow Animation--//
 	new WOW().init();
 	//--Wow Animation--//
@@ -194,6 +212,41 @@ $(document).ready(function () {
 	//--Preloader--//
 
 	//swipper slider//
+	var swiper = new Swiper(".catagory_product", {
+		loop: true,
+		autoplay: {
+			enabled: true,
+			delay: 2000,
+			reverseDirection: true,
+		},
+		breakpoints: {
+			1800: {
+				slidesPerView: 8,
+				spaceBetween: 3
+			},
+			1400: {
+				slidesPerView: 7,
+				spaceBetween: 5
+			},
+			1050: {
+				slidesPerView: 6,
+				spaceBetween: 5
+			},
+			991: {
+				slidesPerView: 5,
+				spaceBetween: 5
+			},
+			500: {
+				slidesPerView: 2,
+				spaceBetween: 5
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 5
+			}
+		}
+	});
+
 	var swiper = new Swiper(".product__featurewrapper", {
 		loop: true,
 		slidesPerView: 5,

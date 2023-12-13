@@ -130,6 +130,7 @@
       outline: none;
       border: unset;
       padding-right: 6px;
+      cursor: pointer;
       i {
         font-size: 26px;
         color: var(--base5);
@@ -152,16 +153,23 @@
         background: #128849;
         border-radius: 3px;
         border: unset;
+        i {
+          transition: all 0.3s linear;
+        }
         &:hover {
-          background: var(--base5);
+          background: var(--white);
+          i {
+            color: var(--title);
+          }
         }
       }
     }
   }
   .subscribe {
     padding: 20px 44px;
-    span {
-      color: #000;
+    &.default-btn {
+      border-radius: 50px;
+      color: var(--title);
     }
   }
 }
