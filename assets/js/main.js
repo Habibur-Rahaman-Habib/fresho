@@ -215,7 +215,7 @@ $(document).ready(function () {
 	var swiper = new Swiper(".catagory_product", {
 		loop: true,
 		autoplay: {
-			enabled: true,
+			enabled: false,
 			delay: 2000,
 			reverseDirection: true,
 		},

@@ -847,7 +847,7 @@ p {
 .progress-wrap {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 70px;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -1021,7 +1021,6 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 .sectionbg {
   background: #f8f9fc;
@@ -1403,4 +1402,17 @@ p {
 //Preloader animation
 .bg__fixed {
   background: var(--bg1);
+}
+
+.btn-close {
+  border: 1px solid transparent;
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    border: 1px solid var(--base3);
+    i {
+      color: var(--base3) !important;
+    }
+  }
 }

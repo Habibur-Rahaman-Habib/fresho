@@ -429,7 +429,6 @@
       //   width: unset !important;
       // }
       .sub-menu {
-        // padding: 5px 5px 5px 0px;
         background-color: var(--banner);
         transition: all 4s;
         position: relative;
@@ -446,14 +445,13 @@
           justify-content: center;
           opacity: 0;
           gap: 5px;
-          // transform: translateY(25px);
           visibility: hidden;
           display: block !important;
           ul {
             display: block !important;
           }
           @include breakpoint(max-xl) {
-            left: -120px;
+            // left: -120px;
           }
         }
         li {
@@ -829,7 +827,7 @@
           position: relative;
           @media (min-width: 992px) {
             position: absolute;
-            top: 100%;
+            top: 107%;
             left: 0;
             width: 250px;
             z-index: 999;
@@ -839,14 +837,13 @@
             justify-content: center;
             opacity: 0;
             gap: 5px;
-            transform: translateY(25px);
             visibility: hidden;
             display: block !important;
             ul {
               display: block !important;
             }
             @include breakpoint(max-xl) {
-              left: -120px;
+              // left: -120px;
             }
           }
           li {
@@ -854,7 +851,7 @@
             transition: all 0.3s !important;
             a {
               text-transform: capitalize;
-              font-weight: 600;
+              // font-weight: 600;
               font-size: 14px;
               width: 100%;
               display: block;
@@ -869,7 +866,7 @@
               &:not(.custom__width) > {
                 a {
                   color: var(--base);
-                  padding-left: 15px !important;
+                  padding-left: 30px !important;
                 }
               }
             }
@@ -904,7 +901,7 @@
             .sub-menu {
               opacity: 1;
               visibility: visible;
-              transform: translateY(5px);
+              // transform: translateY(5px);
               li {
                 a {
                   padding-left: 25px;
@@ -1141,7 +1138,7 @@
         background-color: var(--base2);
       }
       &:hover {
-        color: var(white) !important;
+        color: var(--white) !important;
       }
     }
   }
