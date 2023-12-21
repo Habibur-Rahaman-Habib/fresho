@@ -63,9 +63,8 @@
 		==================================================
 ============== */
 
-"user strict";
+(function ($) {
 
-$(document).ready(function () {
 	//--Nice Select--
 	$('select').niceSelect();
 	//--Nice Select--
@@ -397,12 +396,11 @@ $(document).ready(function () {
 		loop: true,
 		spaceBetween: 30,
 		speed: 2000,
-		// effect: 'fade',
-		// crossFade: true,
-		// slidesPerView: 1,
-		// dots: true,
+		effect: 'fade',
+		crossFade: true,
+		slidesPerView: 1,
 		autoplay: {
-			// enabled: true,
+			enabled: true,
 			delay: 2500,
 		},
 		pagination: {
@@ -434,7 +432,33 @@ $(document).ready(function () {
 	});
 	//product slider
 
+})(jQuery)
+$(".modal").on('show.bs.modal', function () {
+	setTimeout(function () {
+		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			spaceBetween: 10,
+			slidesPerView: 3,
+			// freeMode: true,
+			watchSlidesProgress: true,
+			centeredSlides: true,
+		});
+
+		var swiper = new Swiper(".mySwiper2", {
+			loop: true,
+			// slidesPerView: 1,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+				swiper: swiper,
+			},
+		});
+	}, 500);
 });
+
 
 //Date time Set//
 

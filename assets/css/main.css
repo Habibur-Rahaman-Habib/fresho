@@ -1281,7 +1281,9 @@ p {
       color: var(--white); }
 
 .creation__content h2 {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  z-index: 2;
+  position: relative; }
 
 .my-button-next {
   width: 38px;
@@ -2391,7 +2393,8 @@ p {
   position: absolute;
   left: 100%;
   background: var(--white);
-  top: 0; }
+  top: 0;
+  padding: 35px 20px; }
   @media (max-width: 1210px) {
     .sub_mega {
       width: 800px; } }
@@ -2447,12 +2450,13 @@ p {
     color: var(--title);
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
-    transition: 0.3s all; }
+    transition: 0.3s all;
+    margin-bottom: 0; }
     .menu_blog .mblog_single .mblog_content a h5:hover {
       color: var(--base2); }
 
 .menu_blog .mblog_single .mblog_content p {
-  margin-top: 10px;
+  margin-top: 4px;
   color: var(--basebg);
   font-weight: 500; }
 

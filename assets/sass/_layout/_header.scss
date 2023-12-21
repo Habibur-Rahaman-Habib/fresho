@@ -1036,6 +1036,7 @@
   left: 100%;
   background: var(--white);
   top: 0;
+  padding: 35px 20px;
   @media (max-width: 1210px) {
     width: 800px;
   }
@@ -1106,13 +1107,14 @@
         h5 {
           color: var(--title);
           transition: 0.3s all;
+          margin-bottom: 0;
           &:hover {
             color: var(--base2);
           }
         }
       }
       p {
-        margin-top: 10px;
+        margin-top: 4px;
         color: var(--basebg);
         font-weight: 500;
       }
