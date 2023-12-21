@@ -294,8 +294,47 @@
 
 .borange.default-btn {
   background-color: var(--base);
-  color: var(--white);
   border-radius: 25px;
+  transition: 0.4s;
+  span {
+    background-color: var(--base3);
+  }
+  &:hover {
+    color: var(--white) !important;
+  }
+}
+
+.borange1.default-btn {
+  background-color: var(--base);
+  color: var(--white);
+  border-radius: 5px;
+  transition: 0.4s;
+  font-weight: 400 !important;
+  span {
+    background-color: var(--base3);
+  }
+  &:hover {
+    color: var(--white) !important;
+  }
+}
+
+.bgreen1.default-btn {
+  background-color: var(--base2);
+  border-radius: 4px;
+  color: var(--white);
+  transition: 0.4s;
+  span {
+    background-color: var(--base3);
+  }
+  &:hover {
+    color: var(--white) !important;
+  }
+}
+
+.bwhite1.default-btn {
+  background-color: var(--white);
+  border-radius: 4px;
+  color: var(--title);
   transition: 0.4s;
   span {
     background-color: var(--base3);

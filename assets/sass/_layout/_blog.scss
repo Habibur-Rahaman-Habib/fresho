@@ -45,7 +45,7 @@
     border-color: var(--base2);
     .thumb {
       img {
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
     }
     .blog__badge {
@@ -220,6 +220,13 @@
       background: var(--white);
       border-color: var(--base2);
     }
+    .content {
+      h5 {
+        a {
+          color: var(--base2) !important;
+        }
+      }
+    }
   }
   @include breakpoint(max-xxl) {
     gap: 14px;
@@ -374,7 +381,7 @@
   &:hover {
     .thumb {
       img {
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
     }
   }

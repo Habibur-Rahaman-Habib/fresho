@@ -12,8 +12,8 @@
    <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="images/x-icon">
    <!--========= Library CSS  =========-->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <!--========= Library CSS  =========-->
    <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+   <link rel="stylesheet" href="assets/css/fancybox.css">
    <!--========= Template CSS  =========-->
    <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -47,7 +47,7 @@
 
    <!-- Header Here -->
    <div class="header__section__attachment">
-      <div class="header__contact base2bg bborder">
+      <div class="header__contact base2bg bborder d-none d-lg-block">
          <div class="container">
             <div class="header__contactwrap d-flex align-items-center">
                <ul class="header__contact-left smalborer d-flex align-items-center">
@@ -107,7 +107,7 @@
             </div>
          </div>
       </div>
-      <div class="fresho__headertop base2bg">
+      <div class="fresho__headertop base2bg d-none d-lg-block">
          <div class="container">
             <div class="haderbar__top d-flex align-items-center">
                <div class="d-flex search__supportadd align-items-center">
@@ -422,8 +422,8 @@
          <div class="container">
             <div class="header-wrapper">
                <div class="logo-menu d-lg-none">
-                  <a href="index.html" class="small__logo">
-                     <img src="assets/img/logo/favicon.png" alt="logo">
+                  <a href="index.html" class="top__logo">
+                     <img src="assets/img/logo/logo.png" alt="logo">
                   </a>
                </div>
                <ul class="main-menu">
@@ -941,13 +941,13 @@
                <div class="menu__right__components d-flex align-items-center">
                   <div class="menu__components d-flex align-items-center">
                      <a href="collection.html"
-                        class="best__offer d-flex align-items-center gap-2 title fz-14 fw-500 bodyfont">
+                        class="best__offer d-flex align-items-center gap-2 title fz-14 fw-500 bodyfont d-none d-sm-block">
                         <i class="bi bi-star-half"></i>
                         Best Offer
                      </a>
                      <div class="dropdown profie__dropdown">
                         <a href="dashboard.html"
-                           class="link fz-14 fw-500 title bodyfont d-flex align-items-center gap-2 white user__active"
+                           class="link fz-14 fw-500 title bodyfont d-flex align-items-center gap-2 white user__active d-none d-sm-block"
                            data-bs-toggle="dropdown" data-bs-offset="0,16" aria-expanded="true">
                            <i class="bi bi-person fz-20"></i>
                            My Account
@@ -999,7 +999,7 @@
    <!-- Hero Section Here -->
    <div class="banner__section ralt overhid">
       <div class="container">
-         <div class="banner__content__wrappertwo pt-50 pb-50">
+         <!-- <div class="banner__content__wrappertwo pt-50 pb-50">
             <div class="row align-items-center">
                <div class="col-xxl-5 col-xl-6">
                   <div class="banner__twocontent">
@@ -1015,9 +1015,9 @@
                      <span class="fz-20 d-block mb-30 headfont white wow fadeInDown">
                         Making grocery food errands worth your while
                      </span>
-                     <a href="collection.html" class="cmn--btn wow fadeInUp">
+                     <a href="collection.html" class="borange1 default-btn wow fadeInUp">
+                        Buy product
                         <span>
-                           Buy product
                         </span>
                      </a>
                   </div>
@@ -1028,7 +1028,75 @@
                   </div>
                </div>
             </div>
+         </div> -->
+
+         <div class="banner2_slider_wrap ralt">
+            <div class="swiper banner2_slider ralt">
+               <div class="swiper-wrapper">
+                  <div class="banner__content__wrappertwo pt-50 pb-50 swiper-slide">
+                     <div class="row align-items-center">
+                        <div class="col-xxl-5 col-xl-6">
+                           <div class="banner__twocontent">
+                              <span class="bntwo__saleoff wow fadeInDownInX mb-16">
+                                 sale up to 30% off
+                              </span>
+                              <span class="bntwo__title mb-24">
+                                 Get Fresh Organic
+                                 <span class="d-block wow fadeInUp">
+                                    Food Everyday
+                                 </span>
+                              </span>
+                              <span class="fz-20 d-block mb-30 headfont white wow fadeInDown">
+                                 Making grocery food errands worth your while
+                              </span>
+                              <a href="collection.html" class="borange1 default-btn wow fadeInUp">
+                                 Buy product
+                                 <span>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6">
+                           <div class="right__thumbs">
+                              <img src="assets/img/bn/bntwo-thumb.png" alt="img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="banner__content__wrappertwo pt-50 pb-50 swiper-slide">
+                     <div class="row align-items-center">
+                        <div class="col-xxl-5 col-xl-6">
+                           <div class="banner__twocontent">
+                              <span class="bntwo__saleoff wow fadeInDownInX mb-16">
+                                 sale up to 30% off
+                              </span>
+                              <span class="bntwo__title mb-24">
+                                 Get Fresh Organic
+                                 <span class="d-block wow fadeInUp">
+                                    Food Everyday
+                                 </span>
+                              </span>
+                              <span class="fz-20 d-block mb-30 headfont white wow fadeInDown">
+                                 Making grocery food errands worth your while
+                              </span>
+                              <a href="collection.html" class="borange1 default-btn wow fadeInUp">
+                                 Buy product
+                                 <span>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6">
+                           <div class="right__thumbs">
+                              <img src="assets/img/bn/bncar-shape1.png" alt="img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
+
       </div>
    </div>
    <!-- Hero Section End -->
@@ -1039,7 +1107,7 @@
          <div class="shipting__wrappertwo">
             <div class="row g-4">
                <div class="col-xxl-3 col-xl-6 col-lg- col-md-6">
-                  <a href="javascript:void(0)" class="shipting__item d-flex align-items-center">
+                  <div class="shipting__item d-flex align-items-center">
                      <div class="icon ralt">
                         <img src="assets/img/blog/rocket.png" class="mainicon" alt="icon">
                         <img src="assets/img/blog/iconround.png" class="sround" alt="shape">
@@ -1052,10 +1120,10 @@
                            When your order over $150
                         </span>
                      </div>
-                  </a>
+                  </div>
                </div>
                <div class="col-xxl-3 col-xl-6 col-lg- col-md-6">
-                  <a href="javascript:void(0)" class="shipting__item d-flex align-items-center">
+                  <div class="shipting__item d-flex align-items-center">
                      <div class="icon ralt">
                         <img src="assets/img/blog/hand.png" class="mainicon" alt="icon">
                         <img src="assets/img/blog/iconround.png" class="sround" alt="shape">
@@ -1068,10 +1136,10 @@
                            20 days money back gurantee
                         </span>
                      </div>
-                  </a>
+                  </div>
                </div>
                <div class="col-xxl-3 col-xl-6 col-lg- col-md-6">
-                  <a href="javascript:void(0)" class="shipting__item d-flex align-items-center">
+                  <div class="shipting__item d-flex align-items-center">
                      <div class="icon ralt">
                         <img src="assets/img/blog/secure.png" class="mainicon" alt="icon">
                         <img src="assets/img/blog/iconround.png" class="sround" alt="shape">
@@ -1084,10 +1152,10 @@
                            Use safe payment method
                         </span>
                      </div>
-                  </a>
+                  </div>
                </div>
                <div class="col-xxl-3 col-xl-6 col-lg- col-md-6">
-                  <a href="javascript:void(0)" class="shipting__item d-flex align-items-center">
+                  <div class="shipting__item d-flex align-items-center">
                      <div class="icon ralt">
                         <img src="assets/img/blog/head.png" class="mainicon" alt="icon">
                         <img src="assets/img/blog/iconround.png" class="sround" alt="shape">
@@ -1100,7 +1168,7 @@
                            24/7 supported our customer
                         </span>
                      </div>
-                  </a>
+                  </div>
                </div>
             </div>
          </div>
@@ -1301,9 +1369,9 @@
                         <span class="fz-20 headfont fw-500 mb-30 d-block base5 text-uppercase">
                            enjoy up to 50% off
                         </span>
-                        <a href="cart.html" class="cmn--btn2">
+                        <a href="cart.html" class="default-btn bgreen1">
+                           Shop Now
                            <span>
-                              Shop Now
                            </span>
                         </a>
                      </div>
@@ -1322,9 +1390,9 @@
                         <span class="fz-20 headfont fw-500 mb-30 d-block base5 text-uppercase">
                            Enjoy up to 30% off
                         </span>
-                        <a href="cart.html" class="cmn--btn2">
+                        <a href="cart.html" class="default-btn bgreen1">
+                           Shop Now
                            <span>
-                              Shop Now
                            </span>
                         </a>
                      </div>
@@ -4201,10 +4269,9 @@
                         <span class="fz-18 bodyfont fw-500 mb-30 d-block base">
                            Enjoy up to 30% for grocery products
                         </span>
-                        <a href="#0" class="cmn--btn2 bgwhite__btn">
-                           <span>
-                              Shop Now
-                           </span>
+                        <a href="#0" class="default-btn bwhite1">
+                           Shop Now
+                           <span></span>
                         </a>
                      </div>
                   </div>
@@ -4222,10 +4289,9 @@
                         <span class="fz-18 bodyfont fw-500 mb-30 d-block whites">
                            Enjoy up to 20% for all grocery products
                         </span>
-                        <a href="#0" class="cmn--btn2 bgwhite__btn">
-                           <span>
-                              Shop Now
-                           </span>
+                        <a href="#0" class="default-btn bwhite1">
+                           Shop Now
+                           <span></span>
                         </a>
                      </div>
                   </div>
@@ -4269,7 +4335,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Metro sea organic salt</a>
+                              <a href="product-details.html" class="title">Metro sea organic salt</a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">1kg</span>
@@ -4305,7 +4371,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Italian Wheat Pasta</a>
+                              <a href="product-details.html" class="title">Italian Wheat Pasta</a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">1 Pack</span>
@@ -4341,7 +4407,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Liverko liquid detergent </a>
+                              <a href="product-details.html" class="title">Liverko liquid detergent </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770ml</span>
@@ -4377,7 +4443,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Glossy cosmetic pump </a>
+                              <a href="product-details.html" class="title">Glossy cosmetic pump </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770ml</span>
@@ -4422,7 +4488,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Grapes in wicker basket</a>
+                              <a href="product-details.html" class="title">Grapes in wicker basket</a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">1kg</span>
@@ -4458,7 +4524,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Italian Wheat Pasta</a>
+                              <a href="product-details.html" class="title">Italian Wheat Pasta</a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770 ml</span>
@@ -4494,7 +4560,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Fresh garden Watermelon </a>
+                              <a href="product-details.html" class="title">Fresh garden Watermelon </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770ml</span>
@@ -4530,7 +4596,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Scotish red favorable drinks </a>
+                              <a href="product-details.html" class="title">Scotish red favorable drinks </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770ml</span>
@@ -4575,7 +4641,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Green Chinese cabbage </a>
+                              <a href="product-details.html" class="title">Green Chinese cabbage </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">500gm</span>
@@ -4611,7 +4677,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Fresh colorful capsicum</a>
+                              <a href="product-details.html" class="title">Fresh colorful capsicum</a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">1kg</span>
@@ -4647,7 +4713,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Indian Red ball onion </a>
+                              <a href="product-details.html" class="title">Indian Red ball onion </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">2kg</span>
@@ -4683,7 +4749,7 @@
                               </span>
                            </div>
                            <h5 class="title fz-18 mb-2">
-                              <a href="#0" class="title">Bangladeshi jackfruits </a>
+                              <a href="product-details.html" class="title">Bangladeshi jackfruits </a>
                            </h5>
                            <span class="fz-14 fw-500 spa d-block mb-10">
                               Unit: <span class="fw-400 pra">770ml</span>
@@ -4713,10 +4779,9 @@
             </h3>
             <form action="#0" class="news__form">
                <input type="email" placeholder="Enter Your Email">
-               <button type="submit" class="cmn--btn">
-                  <span>
-                     Subscribe now
-                  </span>
+               <button type="submit" class="default-btn borange">
+                  Subscribe now
+                  <span></span>
                </button>
             </form>
          </div>
@@ -4729,7 +4794,7 @@
       <div class="container">
          <div class="footer__toptwo pb-80">
             <div class="row g-4">
-               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="footer__item first__fitem">
                      <a href="index.html" class="footer__logo mb-30 d-block">
                         <img src="assets/img/logo/logo.png" alt="logo">
@@ -4766,12 +4831,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Information
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <a href="about.html" class="fz-16 fw-400 bodyfont pra d-block">
                               About us
@@ -4810,12 +4875,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Categories
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <a href="about.html" class="fz-16 fw-400 bodyfont pra d-block">
                               Bakery & Pastry
@@ -4854,12 +4919,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Contact us
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <span class="fz-16 fw-500 bodyfont title mb-2 d-block">
                               Location
@@ -4894,48 +4959,42 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Instagram
                      </span>
                      <div class="instagram__box d-flex flex-wrap">
-                        <a href="blog.html" class="instagram__item">
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in1.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in11.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in2.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in22.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in3.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in33.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in4.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in44.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in5.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in55.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in6.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
+                           <a href="assets/img/footer/in66.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -5340,6 +5399,10 @@
    <script src="assets/js/jquery.nice-select.min.js"></script>
    <!--Odometer Js-->
    <script src="assets/js/odometer.min.js"></script>
+   <!--fancybox Js-->
+   <script src="assets/js/fancybox.js"></script>
+   <!--fancybox Js-->
+   <script src="assets/js/fancybox.js"></script>
    <!--main Js-->
    <script src="assets/js/main.js"></script>
 </body>

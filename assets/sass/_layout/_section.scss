@@ -219,7 +219,7 @@
   }
   &:hover {
     img {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
   }
 }
@@ -847,7 +847,7 @@
   &:hover {
     .thumb {
       img {
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
       .social {
         opacity: 1;
@@ -1176,8 +1176,12 @@
 .product__tabsnew {
   .product__fitem {
     .compare__view {
-      left: 100%;
-      top: 10px;
+      // left: 100%;
+      // top: 0px;
+      left: inherit;
+      top: 5px !important;
+      right: 0;
+      transform: inherit;
     }
     .exprire__box {
       position: absolute;
@@ -1201,8 +1205,10 @@
         }
       }
       .compare__view {
-        left: calc(100% - 34px);
-        top: 80px;
+        // left: calc(100% - 34px);
+        // top: 80px;
+        right: 5px;
+        // top: 28%;
       }
     }
   }
@@ -1381,11 +1387,18 @@
       margin: 0 auto;
       border-radius: 2px;
     }
+    .thumb {
+      .compare__view {
+        left: inherit;
+        right: 0;
+        top: 6px;
+        transform: inherit;
+      }
+    }
     &:hover {
       .thumb {
         .compare__view {
-          top: 77px;
-          left: 90%;
+          right: 6px;
         }
       }
     }

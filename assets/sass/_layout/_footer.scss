@@ -69,6 +69,18 @@
     }
   }
 }
+
+.quicklink {
+  li {
+    a {
+      &:hover {
+        color: var(--base2) !important;
+        border-left: 1px solid var(--base2) !important;
+      }
+    }
+  }
+}
+
 .footer__contact {
   li {
     &:not(:last-child) {
@@ -304,7 +316,7 @@
         color: var(--pra);
       }
       &:hover {
-        background: #ff6c49 !important;
+        background: var(--base2) !important;
         i {
           color: #fff !important;
         }

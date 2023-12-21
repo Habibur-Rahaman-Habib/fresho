@@ -183,6 +183,11 @@ $(document).ready(function () {
 	});
 	//--Odometer--//
 
+	//-- Fancy box//
+	Fancybox.bind("[data-fancybox]", {
+	});
+	//-- Fancy box//
+
 	// Button Hover JS
 	$(function () {
 		$('.default-btn')
@@ -215,7 +220,7 @@ $(document).ready(function () {
 	var swiper = new Swiper(".catagory_product", {
 		loop: true,
 		autoplay: {
-			enabled: false,
+			enabled: true,
 			delay: 2000,
 			reverseDirection: true,
 		},
@@ -251,7 +256,7 @@ $(document).ready(function () {
 		loop: true,
 		slidesPerView: 5,
 		autoplay: {
-			enabled: true,
+			enabled: false,
 			delay: 3000,
 		},
 		navigation: {
@@ -386,6 +391,23 @@ $(document).ready(function () {
 				spaceBetween: 5
 			}
 		}
+	});
+
+	var swiper = new Swiper(".banner2_slider", {
+		loop: true,
+		spaceBetween: 30,
+		speed: 2000,
+		// effect: 'fade',
+		// crossFade: true,
+		// slidesPerView: 1,
+		// dots: true,
+		autoplay: {
+			// enabled: true,
+			delay: 2500,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
 	});
 
 	//product slider

@@ -12,8 +12,8 @@
    <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="images/x-icon">
    <!--========= Library CSS  =========-->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <!--========= Library CSS  =========-->
    <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+   <link rel="stylesheet" href="assets/css/fancybox.css">
    <!--========= Template CSS  =========-->
    <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -47,7 +47,7 @@
 
    <!-- Header Here -->
    <div class="header__section__attachment">
-      <div class="header__contact base2bg bborder">
+      <div class="header__contact base2bg bborder d-none d-lg-block">
          <div class="container">
             <div class="header__contactwrap d-flex align-items-center">
                <ul class="header__contact-left smalborer d-flex align-items-center">
@@ -107,7 +107,7 @@
             </div>
          </div>
       </div>
-      <div class="fresho__headertop base2bg">
+      <div class="fresho__headertop base2bg d-none d-lg-block">
          <div class="container">
             <div class="haderbar__top d-flex align-items-center">
                <div class="d-flex search__supportadd align-items-center">
@@ -422,8 +422,8 @@
          <div class="container">
             <div class="header-wrapper">
                <div class="logo-menu d-lg-none">
-                  <a href="index.html" class="small__logo">
-                     <img src="assets/img/logo/favicon.png" alt="logo">
+                  <a href="index.html" class="top__logo">
+                     <img src="assets/img/logo/logo.png" alt="logo">
                   </a>
                </div>
                <ul class="main-menu">
@@ -436,7 +436,7 @@
                         <i class="bi bi-list-ul title"></i>
                      </a>
                      <ul class="sub-menu shoplist__custom">
-                        <li>
+                        <li class="position-static">
                            <a href="#0" class="d-flex justify-content-between align-items-center">
                               <span class="d-flex align-items-center gap-2">
                                  <img src="assets/img/category/cate3.png" alt="cate">
@@ -444,31 +444,62 @@
                               </span>
                               <i class="bi bi-chevron-right title"></i>
                            </a>
-                           <ul class="sub__listm">
-                              <li class="fz-18 pt-10 pb-10 text-uppercase title headfont  mb-10 d-block ps-3">
-                                 Bakery Item
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Bakerys
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Pastry
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Testy Tea
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Toast
-                                 </a>
-                              </li>
-                           </ul>
+                           <div class="sub_mega p-4 shadow rounded-2">
+                              <div class="row">
+                                 <div class="col-3">
+                                    <div class="item">
+                                       <h4>Grid Layout</h4>
+                                       <ul>
+                                          <li><a href="#">Small</a></li>
+                                          <li><a href="#">Medium</a></li>
+                                          <li><a href="#">Large</a></li>
+                                          <li><a href="#">Extra Large <span class="new">NEW</span> </a></li>
+                                          <li><a href="#">Boxed</a></li>
+                                          <li><a href="#">Custom Shop Page</a></li>
+                                          <li><a href="#">Single Shop Page</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-3">
+                                    <div class="item">
+                                       <h4>Product Layout</h4>
+                                       <ul>
+                                          <li><a href="#">2 columns</a></li>
+                                          <li class="position-relative"><a href="#">2 columns + sidebar
+                                                <span>HOT</span></a></li>
+                                          <li><a href="#">3 columns</a></li>
+                                          <li><a href="#">Product Image Zoom</a></li>
+                                          <li><a href="#">Product Tabs</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-3">
+                                    <div class="item">
+                                       <h4>Product Type</h4>
+                                       <ul>
+                                          <li><a href="#">Simple Product</a></li>
+                                          <li><a href="#">Variable Product</a></li>
+                                          <li><a href="#">Grouped Product</a></li>
+                                          <li><a href="#">External & Affiliate Product</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-3">
+                                    <div class="item">
+                                       <h4>Categories</h4>
+                                       <ul>
+                                          <li><a href="#">Without Categories</a></li>
+                                          <li><a href="#">With Description</a></li>
+                                       </ul>
+                                       <h4 class="mt-4">Brands</h4>
+                                       <ul>
+                                          <li><a href="#">Brand List 1</a></li>
+                                          <li><a href="#">Brand List 2</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </li>
                         <li>
                            <a href="#0" class="d-flex justify-content-between align-items-center">
@@ -509,7 +540,7 @@
                               </li>
                            </ul>
                         </li>
-                        <li>
+                        <li class="position-static">
                            <a href="#0" class="d-flex justify-content-between align-items-center">
                               <span class="d-flex align-items-center gap-2">
                                  <img src="assets/img/category/cate3.png" alt="cate">
@@ -517,31 +548,154 @@
                               </span>
                               <i class="bi bi-chevron-right title"></i>
                            </a>
-                           <ul class="sub__listm">
-                              <li class="fz-18 pt-10 pb-10 text-uppercase title headfont  mb-10 d-block ps-3">
-                                 Food Item
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Apple
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Papaya
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Banana
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#0">
-                                    Guava
-                                 </a>
-                              </li>
-                           </ul>
+                           <div class="sub_mega p-4 shadow rounded-2">
+                              <div class="row">
+                                 <div class="col-3">
+                                    <div class="item">
+                                       <h4>Fresh Fruit</h4>
+                                       <ul>
+                                          <li><a href="#">Apple & Stone Fruits</a></li>
+                                          <li><a href="#">Berries</a></li>
+                                          <li><a href="#">Tropical & Exotic</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-4">
+                                    <div class="menu_blog">
+                                       <div class="mblog_single d-flex align-items-center gap-4">
+                                          <div class="mblog_img">
+                                             <a href="product-details.html"><img src="assets/img/blog/popular1.png"
+                                                   alt="" class="w-100"></a>
+                                          </div>
+                                          <div class="mblog_content">
+                                             <a href="product-details.html" class="p-0 ps-0">
+                                                <h5>Salt 2 Units</h5>
+                                             </a>
+                                             <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                             </span>
+                                             <p>60$</p>
+                                          </div>
+                                       </div>
+                                       <div class="mblog_single d-flex align-items-center gap-4 mt-4">
+                                          <div class="mblog_img">
+                                             <a href="product-details.html"><img src="assets/img/blog/popular2.png"
+                                                   alt="" class="w-100"></a>
+                                          </div>
+                                          <div class="mblog_content">
+                                             <a href="product-details.html" class="p-0 ps-0">
+                                                <h5>Orange</h5>
+                                             </a>
+                                             <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                             </span>
+                                             <p>$10.00 - $12.00</p>
+                                          </div>
+                                       </div>
+                                       <div class="mblog_single d-flex align-items-center gap-4 mt-4">
+                                          <div class="mblog_img">
+                                             <a href="product-details.html"><img src="assets/img/blog/popular3.png"
+                                                   alt="" class="w-100"></a>
+                                          </div>
+                                          <div class="mblog_content">
+                                             <a href="product-details.html" class="p-0 ps-0">
+                                                <h5>Milk 2 Units</h5>
+                                             </a>
+                                             <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                                   viewBox="0 0 576 512">
+                                                   <path fill="#13a662"
+                                                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                </svg>
+                                             </span>
+                                             <p>$40</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-5">
+                                    <div class="mb_img position-relative rounded-3 overflow-hidden">
+                                       <img src="assets/img/show/show2.jpg" alt="" class="w-100">
+                                       <div class="mb_img_content position-absolute">
+                                          <h3>Big Sale for Strawberries!</h3>
+                                          <h3 class="my-4">-50%</h3>
+                                          <a href="collection.html" class="default-btn">
+                                             Shop now
+                                             <span></span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </li>
                         <li>
                            <a href="#0" class="d-flex justify-content-between align-items-center">
@@ -687,23 +841,17 @@
                         <i class="bi bi-chevron-down"></i>
                      </a>
                      <ul class="sub-menu home__sub">
-                        <li class="custom__width">
-                           <ul>
-                              <li>
-                                 <a href="index.html">Home One Light</a>
-                              </li>
-                              <li>
-                                 <a href="index-2.html">Home Two Light</a>
-                              </li>
-                           </ul>
-                           <ul>
-                              <li>
-                                 <a href="index-dark.html">Home One Dark</a>
-                              </li>
-                              <li>
-                                 <a href="index-dark2.html">Home Two Dark</a>
-                              </li>
-                           </ul>
+                        <li>
+                           <a href="index.html">Home One Light</a>
+                        </li>
+                        <li>
+                           <a href="index-2.html">Home Two Light</a>
+                        </li>
+                        <li>
+                           <a href="index-dark.html">Home One Dark</a>
+                        </li>
+                        <li>
+                           <a href="index-dark2.html">Home Two Dark</a>
                         </li>
                      </ul>
                   </li>
@@ -793,13 +941,13 @@
                <div class="menu__right__components d-flex align-items-center">
                   <div class="menu__components d-flex align-items-center">
                      <a href="collection.html"
-                        class="best__offer d-flex align-items-center gap-2 title fz-14 fw-500 bodyfont">
+                        class="best__offer d-flex align-items-center gap-2 title fz-14 fw-500 bodyfont d-none d-sm-block">
                         <i class="bi bi-star-half"></i>
                         Best Offer
                      </a>
                      <div class="dropdown profie__dropdown">
                         <a href="dashboard.html"
-                           class="link fz-14 fw-500 title bodyfont d-flex align-items-center gap-2 white user__active"
+                           class="link fz-14 fw-500 title bodyfont d-flex align-items-center gap-2 white user__active d-none d-sm-block"
                            data-bs-toggle="dropdown" data-bs-offset="0,16" aria-expanded="true">
                            <i class="bi bi-person fz-20"></i>
                            My Account
@@ -1105,7 +1253,7 @@
       <div class="container">
          <div class="footer__toptwo pb-80">
             <div class="row g-4">
-               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="footer__item first__fitem">
                      <a href="index.html" class="footer__logo mb-30 d-block">
                         <img src="assets/img/logo/logo.png" alt="logo">
@@ -1142,12 +1290,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Information
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <a href="about.html" class="fz-16 fw-400 bodyfont pra d-block">
                               About us
@@ -1186,12 +1334,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Categories
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <a href="about.html" class="fz-16 fw-400 bodyfont pra d-block">
                               Bakery & Pastry
@@ -1230,12 +1378,12 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Contact us
                      </span>
-                     <ul class="quick__link">
+                     <ul class="quick__link quicklink">
                         <li>
                            <span class="fz-16 fw-500 bodyfont title mb-2 d-block">
                               Location
@@ -1270,48 +1418,42 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="footer__item">
                      <span class="footer__title fw-600 fz-18 title mb-20 d-block">
                         Instagram
                      </span>
                      <div class="instagram__box d-flex flex-wrap">
-                        <a href="blog.html" class="instagram__item">
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in1.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in11.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in2.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in22.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in3.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in33.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in4.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in44.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in5.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
-                        <a href="blog.html" class="instagram__item">
+                           <a href="assets/img/footer/in55.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="instagram__item">
                            <img src="assets/img/footer/in6.png" alt="img">
-                           <span class="icons">
-                              <i class="bi bi-instagram"></i>
-                           </span>
-                        </a>
+                           <a href="assets/img/footer/in66.png" class="icons" data-fancybox="gallery"><i
+                                 class="bi bi-instagram"></i></a>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -1716,6 +1858,8 @@
    <script src="assets/js/jquery.nice-select.min.js"></script>
    <!--Odometer Js-->
    <script src="assets/js/odometer.min.js"></script>
+   <!--fancybox Js-->
+   <script src="assets/js/fancybox.js"></script>
    <!--main Js-->
    <script src="assets/js/main.js"></script>
 </body>
