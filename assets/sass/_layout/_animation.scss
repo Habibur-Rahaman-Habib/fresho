@@ -1,31 +1,68 @@
 //banner circle
 @keyframes cir90 {
-    50%{
-        transform: rotate(90deg);
-    }
+  50% {
+    transform: rotate(90deg);
+  }
 }
 @keyframes cir360 {
-    100%{
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes skew1 {
-    50%{
-        transform: skewY(10deg);
-    }
+  50% {
+    transform: skewY(10deg);
+  }
 }
 @keyframes cir5 {
-    50%{
-        transform: rotate(10deg);
-    }
+  50% {
+    transform: rotate(10deg);
+  }
 }
 @keyframes element1 {
-    50%{
-        transform: rotate(-5deg);
-    }
+  50% {
+    transform: rotate(-5deg);
+  }
 }
 @keyframes updown10 {
-    50%{
-        transform: translateY(-10px);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes upsdown_animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translate(-10px, -10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes theme_fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

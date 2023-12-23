@@ -369,6 +369,10 @@
       @include headfont;
       color: var(--title);
       font-size: 16px;
+      transition: 0.4s;
+      &:hover {
+        color: var(--base2);
+      }
     }
     &:hover {
       .title {

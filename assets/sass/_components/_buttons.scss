@@ -231,7 +231,7 @@
   overflow: hidden;
   z-index: 1;
   background-color: var(--white);
-  color: var(--title);
+  color: var(--title1);
   transition: 0.3s;
   opacity: 1;
   font-weight: 700 !important;
@@ -258,18 +258,12 @@
       height: 562.5px;
     }
   }
-  // i {
-  //   font-size: 12px;
-  //   position: relative;
-  //   top: -1px;
-  //   margin-left: 10px;
-  // }
 }
 
 .bwhite.default-btn {
   background-color: var(--white);
   border-radius: 25px;
-  color: var(--title);
+  color: var(--title1);
   transition: 0.4s;
   span {
     background-color: var(--base2);
@@ -288,7 +282,20 @@
     background-color: var(--white);
   }
   &:hover {
-    color: var(--title) !important;
+    color: var(--title1) !important;
+  }
+}
+
+.bgreen2.default-btn {
+  background-color: var(--base2);
+  border-radius: 25px;
+  color: var(--white);
+  transition: 0.4s;
+  span {
+    background-color: var(--white);
+  }
+  &:hover {
+    color: #000 !important;
   }
 }
 

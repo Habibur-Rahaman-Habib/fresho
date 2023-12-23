@@ -14,7 +14,7 @@
         background-color: var(--white);
       }
       &:hover {
-        color: var(--title) !important;
+        color: var(--title);
       }
     }
   }
@@ -243,6 +243,22 @@
   text-transform: uppercase;
   line-height: 20px;
   display: inline-block;
+}
+.swiper-slide-active {
+  .banner__twocontent {
+    .bntwo__saleoff {
+      animation: 1.5s theme_fadeInUp;
+    }
+    .bntwo__title {
+      animation: 2s theme_fadeInUp;
+    }
+    span.fz-20.d-block.mb-30.headfont {
+      animation: 2.4s theme_fadeInUp;
+    }
+    .borange1 {
+      animation: 2.8s theme_fadeInUp;
+    }
+  }
 }
 
 //banner two

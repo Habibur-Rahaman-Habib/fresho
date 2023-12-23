@@ -7,58 +7,24 @@
 *Description: Fresho - Fresho is a special HTML template  designed for online groceries, organic bio products and grocery shopping and includes all the features for the quick shopping and checkout.
 
 		==================================================
+	// Nice Select
+	// menu top fixed bar
+	// Header Menu
+	// Magnifiqpopup
+	// scroll to top with progress
+	// Odometer
+	// Fancy box
+	// Button Hover JS
+	// Wow Animation
+	// Preloader
+	// swipper slider
+	// product slider
+	// Date time Set
+	// Isotop Filter
+	// quantity
+	// profile image change
+	// range slider
 
-		 01. Added Smooth Scroll 
-		 -------------------------------------------------
-		 02. Preloader
-		 -------------------------------------------------
-		 03. Scroll To Top With Progress
-		 -------------------------------------------------
-		 04. Nice Select
-		 -------------------------------------------------
-		 05. Custom Menu
-		 -------------------------------------------------
-		 06. Video Popup
-		 -------------------------------------------------
-		 07. Odemoter
-		 -------------------------------------------------
-		 08. Wow Animation
-		 -------------------------------------------------
-		 09. Swipper Slider
-		 -------------------------------------------------
-		 10. on resize effects
-		 -------------------------------------------------
-		 11. footer copyright year
-		 -------------------------------------------------
-		 12. odometer counter
-		 -------------------------------------------------
-		 13. video popup
-		 -------------------------------------------------
-		 14. Date Time End
-		 -------------------------------------------------
-		 15. Isotop Filter
-		 -------------------------------------------------
-		 16. Quantity Count
-		 -------------------------------------------------
-		 17. Profile Images Change
-		 -------------------------------------------------
-		 18. Custom Range Slider
-		 -------------------------------------------------
-		 19. Magnify Img Zoom
-		 -------------------------------------------------
-		 20. Product slider
-		 -------------------------------------------------
-		 21. Recently slider
-		 -------------------------------------------------
-		 22. Landed Slider
-		 -------------------------------------------------
-		 23. Customer Slider
-		 -------------------------------------------------
-		 24. Product Details Slider
-		 -------------------------------------------------
-		 25. Title Animation
-		 -------------------------------------------------
-		 26. Footer Styele Three
 
 		==================================================
 ============== */
@@ -88,10 +54,6 @@
 	$(".sbar, .sbar2").on("click", function (e) {
 		$(".cart__sidebar, .sbar").toggleClass("active");
 	});
-
-	// $(".shoplist__bar").on("click", function (e) {
-	// 	$(".shoplist__custom").toggleClass("active");
-	// });
 
 	$(".header-bar").on("click", function (e) {
 		$(".main-menu, .header-bar").toggleClass("active");
@@ -132,7 +94,7 @@
 	});
 	//--Magnifiqpopup--
 
-	// 10. scroll to top with progress
+	// scroll to top with progress
 	var progressPath = document.querySelector(".progress-wrap path");
 	var pathLength = progressPath.getTotalLength();
 	progressPath.style.transition = progressPath.style.WebkitTransition =
@@ -409,18 +371,36 @@
 	});
 
 	//product slider
-	var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper(".blogmySwiper", {
 		loop: true,
 		spaceBetween: 10,
-		slidesPerView: 3,
-		// freeMode: true,
+		slidesPerView: 4,
+		freeMode: true,
 		watchSlidesProgress: true,
-		centeredSlides: true,
-	});
+		direction: "vertical",
+		breakpoints: {
+			0: {
+				direction: "horizontal",
+				slidesPerView: 1,
+			},
+			500: {
+				direction: "horizontal",
+				slidesPerView: 2,
+			},
 
-	var swiper = new Swiper(".mySwiper2", {
+			992: {
+				direction: "horizontal",
+				slidesPerView: 3,
+			},
+
+			993: {
+				direction: "vertical",
+				slidesPerView: 3,
+			},
+		}
+	});
+	var swiper2 = new Swiper(".blogmySwiper2", {
 		loop: true,
-		// slidesPerView: 1,
 		spaceBetween: 10,
 		navigation: {
 			nextEl: ".swiper-button-next",
@@ -432,21 +412,22 @@
 	});
 	//product slider
 
-})(jQuery)
+
+})(jQuery);
+
+
 $(".modal").on('show.bs.modal', function () {
 	setTimeout(function () {
 		var swiper = new Swiper(".mySwiper", {
 			loop: true,
 			spaceBetween: 10,
-			slidesPerView: 3,
-			// freeMode: true,
+			slidesPerView: 4,
+			freeMode: true,
 			watchSlidesProgress: true,
-			centeredSlides: true,
-		});
 
-		var swiper = new Swiper(".mySwiper2", {
+		});
+		var swiper2 = new Swiper(".mySwiper2", {
 			loop: true,
-			// slidesPerView: 1,
 			spaceBetween: 10,
 			navigation: {
 				nextEl: ".swiper-button-next",
@@ -461,7 +442,6 @@ $(".modal").on('show.bs.modal', function () {
 
 
 //Date time Set//
-
 function timingCalc(endtime) {
 	"use strict";
 
