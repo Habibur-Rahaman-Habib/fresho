@@ -1129,7 +1129,7 @@
         border-bottom: none;
         &:hover {
           a {
-            color: var(--base2);
+            color: var(--base2) !important;
             padding-left: 5px;
           }
         }
@@ -1139,8 +1139,8 @@
           -o-transition: 0.4s;
           transition: 0.4s;
           padding: 10px 0px;
-          font-weight: 500;
-          font-size: 13px;
+          font-weight: 500 !important;
+          font-size: 13px !important;
         }
       }
     }
